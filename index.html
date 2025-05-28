@@ -368,28 +368,28 @@
 
     /* OBIO Logo Sizes - Larger to match visual height of D3 */
     .logo-obio-hero {
-      height: 4rem;
+      height: 3rem;
       width: auto;
       filter: var(--logo-filter);
       transition: filter 0.3s ease;
     }
 
     .logo-obio-nav {
-      height: 3rem;
+      height: 2rem;
       width: auto;
       filter: var(--logo-filter);
       transition: filter 0.3s ease;
     }
 
     .logo-obio-card {
-      height: 5rem;
+      height: 3rem;
       width: auto;
       filter: var(--logo-filter);
       transition: filter 0.3s ease;
     }
 
     .logo-obio-footer {
-      height: 3rem;
+      height: 2rem;
       width: auto;
       filter: var(--logo-filter);
       transition: filter 0.3s ease;
@@ -400,7 +400,7 @@
         height: 4rem;
       }
       .logo-obio-hero {
-        height: 5.25rem;
+        height: 4rem;
       }
     }
   </style>
@@ -448,9 +448,11 @@
         <span class="text-sm font-geist-mono text-secondary">June 16-19, 2025 • Boston</span>
       </div>
       
-      <h1 class="font-geist text-5xl md:text-7xl font-bold leading-tight text-primary">
-        District&nbsp;3 × OBIO
-      </h1>
+      <div class="flex items-center justify-center gap-4 md:gap-6">
+        <img src="d3.svg" alt="District 3" class="logo-d3-hero" />
+        <span class="text-4xl md:text-6xl font-bold text-primary">×</span>
+        <img src="obio.svg" alt="OBIO" class="logo-obio-hero" />
+      </div>
       <p class="mt-2 text-2xl md:text-3xl font-light text-accent-bright">
         at BIO&nbsp;International&nbsp;2025
       </p>
@@ -484,7 +486,7 @@
     </h2>
     
     <div class="grid gap-8 md:grid-cols-2">
-      <div class="card-hover rounded-2xl card-bg p-8">
+      <div class="card-hover rounded-2xl card-bg p-8 flex flex-col h-full">
         <div class="mb-6">
           <img 
             src="d3.svg" 
@@ -492,7 +494,7 @@
             class="logo-d3-card"
           />
         </div>
-        <p class="text-secondary leading-relaxed mb-6">
+        <p class="text-secondary leading-relaxed mb-6 flex-grow">
           Concordia University's flagship innovation hub in Montréal, empowering 
           entrepreneurs through free, equity-free programs from validation to scale-up.
         </p>
@@ -500,7 +502,7 @@
           <span>📍 Montréal, QC</span>
           <span>🚀 Since 2013</span>
         </div>
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 mt-auto">
           <a href="https://district3.co" target="_blank" class="text-tertiary hover:text-primary transition">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
@@ -529,7 +531,7 @@
         </div>
       </div>
       
-      <div class="card-hover rounded-2xl card-bg p-8">
+      <div class="card-hover rounded-2xl card-bg p-8 flex flex-col h-full">
         <div class="mb-6">
           <img 
             src="obio.svg" 
@@ -537,7 +539,7 @@
             class="logo-obio-card"
           />
         </div>
-        <p class="text-secondary leading-relaxed mb-6">
+        <p class="text-secondary leading-relaxed mb-6 flex-grow">
           Ontario's bioscience cluster builder, accelerating life-science ventures 
           through capital access, talent development, and global market reach.
         </p>
@@ -545,7 +547,7 @@
           <span>📍 Toronto, ON</span>
           <span>🧬 Life Sciences Focus</span>
         </div>
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 mt-auto">
           <a href="https://www.obio.ca" target="_blank" class="text-tertiary hover:text-primary transition">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
@@ -806,4 +808,3 @@
     });
   </script>
 </body>
-</html>
