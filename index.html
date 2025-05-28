@@ -337,37 +337,70 @@
       transition: filter 0.3s ease;
     }
 
-    .logo-hero {
+    /* D3 Logo Sizes */
+    .logo-d3-hero {
       height: 3rem;
       width: auto;
       filter: var(--logo-filter);
       transition: filter 0.3s ease;
     }
 
-    .logo-nav {
+    .logo-d3-nav {
       height: 1.75rem;
       width: auto;
       filter: var(--logo-filter);
       transition: filter 0.3s ease;
     }
 
-    .logo-card {
+    .logo-d3-card {
       height: 3rem;
       width: auto;
       filter: var(--logo-filter);
       transition: filter 0.3s ease;
     }
 
-    .logo-footer {
+    .logo-d3-footer {
       height: 1.75rem;
+      width: auto;
+      filter: var(--logo-filter);
+      transition: filter 0.3s ease;
+    }
+
+    /* OBIO Logo Sizes - Larger to match visual height of D3 */
+    .logo-obio-hero {
+      height: 4rem;
+      width: auto;
+      filter: var(--logo-filter);
+      transition: filter 0.3s ease;
+    }
+
+    .logo-obio-nav {
+      height: 3rem;
+      width: auto;
+      filter: var(--logo-filter);
+      transition: filter 0.3s ease;
+    }
+
+    .logo-obio-card {
+      height: 5rem;
+      width: auto;
+      filter: var(--logo-filter);
+      transition: filter 0.3s ease;
+    }
+
+    .logo-obio-footer {
+      height: 3rem;
       width: auto;
       filter: var(--logo-filter);
       transition: filter 0.3s ease;
     }
 
     @media (min-width: 768px) {
-      .logo-hero {
+      .logo-d3-hero {
         height: 4rem;
+      }
+      .logo-obio-hero {
+        height: 5.25rem;
       }
     }
   </style>
@@ -378,9 +411,9 @@
   <nav class="fixed top-0 left-0 right-0 z-50 nav-bg">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <img src="d3.svg" alt="District 3" class="logo-nav" />
+        <img src="d3.svg" alt="District 3" class="logo-d3-nav" />
         <span class="text-primary font-bold text-lg">×</span>
-        <img src="obio.svg" alt="OBIO" class="logo-nav" />
+        <img src="obio.svg" alt="OBIO" class="logo-obio-nav" />
       </div>
       <div class="hidden md:flex items-center gap-8">
         <a href="#about" class="text-secondary hover:text-accent-bright transition">About</a>
@@ -456,10 +489,9 @@
           <img 
             src="d3.svg" 
             alt="District 3 Logo" 
-            class="logo-card"
+            class="logo-d3-card"
           />
         </div>
-        <h3 class="font-geist text-2xl font-semibold mb-4 text-primary">District&nbsp;3</h3>
         <p class="text-secondary leading-relaxed mb-6">
           Concordia University's flagship innovation hub in Montréal, empowering 
           entrepreneurs through free, equity-free programs from validation to scale-up.
@@ -502,10 +534,9 @@
           <img 
             src="obio.svg" 
             alt="OBIO Logo" 
-            class="logo-card"
+            class="logo-obio-card"
           />
         </div>
-        <h3 class="font-geist text-2xl font-semibold mb-4 text-primary">OBIO</h3>
         <p class="text-secondary leading-relaxed mb-6">
           Ontario's bioscience cluster builder, accelerating life-science ventures 
           through capital access, talent development, and global market reach.
@@ -695,9 +726,9 @@
       <div class="flex flex-col md:flex-row justify-between items-center gap-6">
         <div class="text-center md:text-left">
           <div class="flex items-center gap-2 justify-center md:justify-start mb-2">
-            <img src="d3.svg" alt="District 3" class="logo-nav" />
+            <img src="d3.svg" alt="District 3" class="logo-d3-footer" />
             <span class="text-primary font-bold">×</span>
-            <img src="obio.svg" alt="OBIO" class="logo-nav" />
+            <img src="obio.svg" alt="OBIO" class="logo-obio-footer" />
           </div>
           <p class="text-sm text-tertiary">Empowering Canadian biotech innovation</p>
         </div>
